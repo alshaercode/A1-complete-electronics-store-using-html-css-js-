@@ -44,7 +44,7 @@
   : [رابط-المشروع](https://alshaercode.github.io/A1-complete-electronics-store-using-html-css-js-/index.html)
 
 ## صور من المشروع
+![صورة الموقع](https://github.com/alshaercode/A1-complete-electronics-store-using-html-css-js-/assets/120109352/958a5aed-2109-44e7-88cf-263debbced5f)
 
-![صورة الموقع](https://github.com/alshaercode/A-complete-electronics-store-using-html-css-js/assets/120109352/4ccf105b-1468-44bc-abb2-b9024b50bf1f)
 
 
