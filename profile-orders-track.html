@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <!-- links style -->
+        <link rel="stylesheet" href="css/style.css">
+        <!-- link icons -->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!-- top-header  -->
+    <nav class="top-header">
+        <div class="container">
+            <div class="right-nav">
+                <span> العروض وفر حتي 45% خصم اليوم</span>
+                <div class="contact-info">
+                    <i class='bx bx-headphone'></i>
+                    <span>+970 555 4342</span>
+                </div>
+            </div>
+            <div class="left-nav">
+                <div class="login-button">
+                    <i class='bx bx-log-in-circle'></i>
+                    <a href="register.html">تسجيل / الدخول</a>
+                </div>
+                <div class="account-button">
+                    <i class='bx bx-user' ></i>
+                    <a href="profile-dashboard.html">حسابي</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- bottom-header -->
+    <nav class="bottom-header">
+        <div class="container">
+            <!--logo-->
+            <!-- <a href="" class="logo"><img src="img/logo.png" alt=""></a> -->
+            <a href="" class="logo"><i class='bx bx-laptop' ></i></a>
+            <nav class="navbar">
+                <a href="index.html">الرئيسة</a>
+                <a href="shop.html">المنتجات</a>
+                <a href="blog.html">مدونة</a>
+                <a href="shortcode.html">من نحن</a>
+                <a href="Connect.html">تواصل معنا</a>
+                <a href="faq.html">الاسئلة الشائعة</a>
+            </nav>
+            <div class="icon-container">
+                <!-- <a href=""><i class='bx bx-refresh' ></i></a>  -->
+                <a href="whishlist.html"><i class='bx bx-heart' ></i></a>
+                <a href="cart.html"> <i class='bx bxs-shopping-bags' ></i></a>
+                <a href=""><i class='bx bx-search-alt' ></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- heading -->
+        <div class="heading">
+            <div class="heading-home">
+                <i class='bx bx-home' ></i>
+                <span>/ حسابي </span>
+            </div>
+            <div class="heading-home">
+                <span>طلباتي</span>
+            </div>
+        </div>
+
+        <div class="container">
+            <!--============== start aside-dashboard ============-->
+            <aside class="aside-dashboard">
+                <div class="account-section">
+                    <h2 class="account-title">حسابي</h2>
+                </div>
+                <div class="account-links">
+                    <div class="account-link   ">
+                        <i class='bx bx-user'></i>
+                        <a href="profile-dashboard.html" class="dashboard-link ">لوحة التحكم</a>
+                    </div>
+                    <div class="account-link active">
+                        <i class='bx bxs-truck'></i>
+                        <a href="profile-orders.html" class="orders-link">طلباتي</a>
+                    </div>
+                    <div class="account-link">
+                        <i class='bx bxs-lock-alt'></i>
+                        <a href="profile-password.html" class="password-link">تغيير كلمة المرور</a>
+                    </div>
+                    <div class="account-link">
+                        <i class='bx bx-log-out'></i>
+                        <a href="index.html" class="logout-link">خروج</a>
+                    </div>
+                </div>
+                
+            </aside>
+            <!--=============== end aside-dashboard ===================-->
+
+            <!--============= start dashboard ============-->
+            <div class="dashboard">
+                <!--------- start order-status-------- -->
+                <div class="order-status">
+                    <div class="status-step">
+                        <i class='bx bxs-hourglass-top r'></i>
+                        <span style="color: red;">جاري التجهيز</span>
+                        <p>12.10.22 ديسمبر</p>
+                    </div>
+                    <div class="status-divider">
+                        <span style="color: red;"> .............. </span>
+                    </div>
+                    <div class="status-step">
+                        <i class='bx bxs-truck y'></i>
+                        <span style="color: #FFC107;">في الطريق</span>
+                        <p>12.10.22 ديسمبر</p>
+                    </div>
+                    <div class="status-divider">
+                        <span style="color: #FFC107;"> ............. </span>
+                    </div>
+                    <div class="status-step">
+                        <i class='bx bx-check-double b'></i>
+                        <span style="color: blue;">تم الوصول</span>
+                        <p>12.10.22 ديسمبر</p>
+                    </div>
+                    <div class="status-divider">
+                        <span style="color: blue;"> ............ </span>
+                    </div>
+                    <div class="status-step">
+                        <i class='bx bxs-hand g'></i>
+                        <span style="color: green;">تم الاستلام</span>
+                        <p>12.10.22 ديسمبر</p>
+                    </div>
+                </div>
+                <!--------- end order-status-------- -->
+
+                <h3 class="dashboard-title ">طلباتي</h3>
+
+                <!----------- start orders-table ------------->
+                <div class="orders-table">
+                    <!-- table-header -->
+                    <div class="table-header">
+                        <div class="cell">#</div>
+                        <div class="cell">صورة</div>
+                        <div class="cell">اسم المنتج</div>
+                        <div class="cell">السعر</div>
+                        <div class="cell">الكمية</div>
+                        <div class="cell">الاجمالى</div>
+                    </div>
+                    <div class=""><hr></div>
+                    <div class="table-row">
+                        <div class="cell">1</div>
+                        <div class="cell cart-cell cart-image">
+                            <img src="img/products/electronic1.jpg" alt="صورة المنتج">
+                        </div>
+                        <div class="cell cart-cell cart-product-name">
+                        <a href=""> كاميرا صغيرة الحجم كول بيكس B500 بدقة 16 ميجابكسل</a>
+                        </div>
+                        <div class="cell cart-cell cart-price">$99.99</div>
+                        <div class="cell cart-cell cart-quantity">2</div>
+                        <div class="cell cart-cell cart-total">$199.99</div>
+                    </div>
+                    <div class=""><hr></div>
+                    <!-- تكرار هنا للمزيد من المنتجات -->
+                    <div class="table-row">
+                        <div class="cell">2</div>
+                        <div class="cell cart-cell cart-image">
+                            <img src="img/products/electronic2.jpg" alt="صورة المنتج">
+                        </div>
+                        <div class="cell cart-cell cart-product-name">
+                            <a href=""> كاميرا صغيرة الحجم كول بيكس B500 بدقة 16 ميجابكسل</a>
+                        </div>
+                        <div class="cell cart-cell cart-price">$99.99</div>
+                        <div class="cell cart-cell cart-quantity">2</div>
+                        <div class="cell cart-cell cart-total">$199.99</div>
+                    </div>
+                    <div class=""><hr></div>
+                    <div class="table-row">
+                        <div class="cell">1</div>
+                        <div class="cell cart-cell cart-image">
+                            <img src="img/products/products-013.png" alt="صورة المنتج">
+                        </div>
+                        <div class="cell cart-cell cart-product-name">
+                            <a href=""> كاميرا صغيرة الحجم كول بيكس B500 بدقة 16 ميجابكسل</a>
+                        </div>
+                        <div class="cell cart-cell cart-price">$99.99</div>
+                        <div class="cell cart-cell cart-quantity">2</div>
+                        <div class="cell cart-cell cart-total">$199.99</div>
+                    </div>
+                    <div class=""><hr></div>
+                </div>
+                <!----------- end orders-table ------------->
+            </div>
+            <!--============= start dashboard ============-->
+        </div>
+    </main>
+
+    <!----------- start footer  section ---------------->
+    <footer class="footer">
+        <div class="continer-footer">
+            <div class="rew-footer">
+                <!-- col-footer 1 -->
+                <div class="col-footer">
+                    <a href="#" class="logo"><img src="img/logo.png" alt=""></a>
+                    <p>لوريم إيبسوم(Lorem Ipsum) هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر.
+                    </p>
+                        <div class="social-links">
+                        <i class='bx bxl-instagram-alt'></i>
+                        <i class='bx bxl-twitter'></i>
+                        <i class='bx bxl-tiktok' ></i>
+                        <i class='bx bxl-youtube' ></i>
+                        <i class='bx bxl-linkedin' ></i>
+                        
+                    </div>
+                </div>
+                <!-- col-footer 1 -->
+                <div class="col-footer">
+                    <h4>روابط سريعه</h4>
+                    <ul>
+                        <li><a href="">الرئيسة</a></li>
+                        <li><a href="">من نحن</a></li>
+                        <li><a href="">تواصل معنا</a></li>
+                        <li><a href="">الشروط والأحكام</a></li>
+                        <li><a href="">الأسئلة الشائعة</a></li>
+                    </ul>
+                </div>
+
+                <!-- col-footer 1 -->
+                <div class="col-footer">
+                    <h4>متابعه الحساب</h4>
+                    <ul>
+                        <li><a href="">طلباتى</a></li>
+                        <li><a href="">متابعه الطلبات</a></li>
+                        <li><a href="">الإرجاع والاستبدال</a></li>
+                        <li><a href="">حسابى</a></li>
+                        <li><a href="">معلوماتى</a></li>
+                    </ul>
+                </div>
+
+                <!-- col-footer 1 -->
+                <div class="col-footer">
+                    <h4>ابقى على تواصل</h4>
+                    <div class="contact-details">
+                        <div class="contact-detail">
+                            <i class='bx bxs-map'></i>
+                            <span>فلسطين, غزة </span>
+                        </div>
+                        <div class="contact-detail">
+                            <i class='bx bxs-envelope' ></i>
+                            <span>mhmod@gmail.com </span>
+                        </div>
+                        <div class="contact-detail">
+                            <i class='bx bxs-phone-call' ></i>
+                            <span>+ 970 546 6345 </span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copy">
+            <p> &copy;   جميع الحقوق محفوظة. صنع بواسطة محمود الشاعر ❤️</p>
+        </div>
+    </footer>
+    <!----------- end footer  section ---------------->
+</body>
+</html>

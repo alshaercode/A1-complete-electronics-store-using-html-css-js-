@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <!-- links style -->
+        <link rel="stylesheet" href="css/style.css">
+        <!-- link icons -->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        
+</head>
+<body>
+    <!-- top-header  -->
+    <nav class="top-header">
+        <div class="container">
+            <div class="right-nav">
+                <span> العروض وفر حتي 45% خصم اليوم</span>
+                <div class="contact-info">
+                    <i class='bx bx-headphone'></i>
+                    <span>+970 555 4342</span>
+                </div>
+            </div>
+            <div class="left-nav">
+                <div class="login-button">
+                    <i class='bx bx-log-in-circle'></i>
+                    <a href="register.html">تسجيل/الدخول</a>
+                </div>
+                <div class="account-button">
+                    <i class='bx bx-user' ></i>
+                    <a href="profile-dashboard.html">حسابي</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- bottom-header -->
+    <nav class="bottom-header">
+        <div class="container">
+            <!--logo-->
+            <!-- <a href="" class="logo"><img src="img/logo.png" alt=""></a> -->
+            <a href="" class="logo"><i class='bx bx-laptop' ></i></a>
+            <nav class="navbar">
+                <a href="index.html">الرئيسة</a>
+                <a href="shop.html">المنتجات</a>
+                <a href="blog.html">مدونة</a>
+                <a href="shortcode.html">من نحن</a>
+                <a href="Connect.html">تواصل معنا</a>
+                <a href="faq.html">الاسئلة الشائعة</a>
+            </nav>
+            <div class="icon-container">
+                <!-- <a href=""><i class='bx bx-refresh' ></i></a>  -->
+                <a href="whishlist.html"><i class='bx bx-heart' ></i></a>
+                <a href="cart.html" id="cart-link"> <i class='bx bxs-shopping-bags' ></i></a>
+                <a href=""><i class='bx bx-search-alt' ></i></a>
+            </div>
+                    <!-- جعل صندوق العربة مرئيًا وإعداده للعرض -->
+        <div id="cart-box" style="display: none;">
+            <h4>عربة التسوق</h4>
+            <ul id="cart-items">
+                <!-- ستظهر العناصر هنا -->
+            </ul>
+        </div>  
+        </div>
+    </nav>
+
+    <main>
+        <!-- heading -->
+        <div class="heading">
+            <div class="heading-home">
+                <i class='bx bx-home' ></i>
+                <span>/ المتجر </span>
+            </div>
+            <div class="heading-home">
+                <span>المتجر</span>
+            </div>
+        </div>
+
+        <div class="container">
+
+            <!-------------- start slider section --------------->
+            <aside class="aside">
+                <h4>الفلترة</h4>
+
+                <!-- section-list -->
+                <div class="section-list">
+                    <span>موبايلاتْ X</span>
+                    <span>لابتوب X</span>
+                    <span>تلفزيونات X</span>
+                    <span>كميرات X</span>
+                </div>
+
+                <div class="section-title">
+                    <h4>الاقسام</h4>
+                </div>
+
+                <!--sidebar  -->
+                <div class="sidebar">
+                    <div class="checkbox-container">
+                        <input type="checkbox">
+                        <label for=""><p><strong>جولات</strong></p></label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox">
+                        <label for=""><p><strong>لابتوب</strong></p></label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox">
+                        <label for=""><p><strong>اجهزة لوحية</strong></p></label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox">
+                        <label for=""><p><strong>ساعات ذكية</strong></p></label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox">
+                        <label for=""><p><strong>التلفزيونات</strong></p></label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox">
+                        <label for=""><p><strong>مكبرات الصوت</strong></p></label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox">
+                        <label for=""><p><strong>الكميرات</strong></p></label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox">
+                        <label for=""><p><strong>اجهزة التخزين</strong></p></label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox">
+                        <label for=""><p><strong>كاميرات المراقبة</strong></p></label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox">
+                        <label for=""><p><strong>أجهزة الشبكات</strong></p></label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox">
+                        <label for=""><p><strong>الألعاب والترفيه</strong></p></label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox">
+                        <label for=""><p><strong>الإلكترونيات المنزلية</strong></p></label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox">
+                        <label for=""><p><strong>الأجهزة الذكية</strong></p></label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox">
+                        <label for=""><p><strong>الأجهزة الطبية</strong></p></label>
+                    </div>
+                </div>
+
+                <div class="section-title">
+                    <h4>العلامات التجارية</h4>
+                </div>
+                <!--sidebar  -->
+                <div class="sidebar">
+                    <div class="checkbox-container">
+                        <input type="checkbox">
+                        <label for=""><p><strong>سامسونج</strong></p></label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox">
+                        <label for=""><p><strong>ابل</strong></p></label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox">
+                        <label for=""><p><strong>ردمي</strong></p></label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox">
+                        <label for=""><p><strong>HP</strong></p></label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox">
+                        <label for=""><p><strong>شاومى</strong></p></label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox">
+                        <label for=""><p><strong>لينوفو</strong></p></label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox">
+                        <label for=""><p><strong>أبل</strong></p></label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox">
+                        <label for=""><p><strong>سانديسك</strong></p></label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox">
+                        <label for=""><p><strong>أنكر</strong></p></label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox">
+                        <label for=""><p><strong>سوني</strong></p></label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox">
+                        <label for=""><p><strong>هواوي</strong></p></label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox">
+                        <label for=""><p><strong>ديل</strong></p></label>
+                    </div>
+                </div>
+
+                <div class="section-title">
+                    <h4>الاوان</h4>
+                </div>
+
+                <div class="colors">
+                    <span class="color-circle red"></span>
+                    <span class="color-circle blue"></span>
+                    <span class="color-circle green"></span>
+                    <span class="color-circle yellow"></span>
+                    <span class="color-circle purple"></span>
+                    <span class="color-circle purple"></span>
+                </div>
+                
+                <div class="section-title">
+                    <h4>الاسعار</h4>
+                </div>
+                <div class="price-range">
+                    <label for="price-range">تحديد السعر:</label>
+                    <input type="range" id="price-range" min="0" max="20000" step="1">
+                    <label for="price-range" id="price-label">0</label>
+                    <!-- <label for="price-range">إلى</label> -->
+                    <div class="price">
+                        <input type="text" id="min-price" placeholder="الحد الأدنى">
+                        <input type="text" id="max-price" placeholder="الحد الأعلى">
+                    </div>
+                    
+                </div>
+                <hr>
+                <div class="aside-img">
+                    <img src="img/banners/banner-page-01.jpg" alt="">
+                </div>
+                
+            </aside>
+            <!-------------- end slider section --------------->
+
+
+
+            <!-------------- start products-home --------------->
+            <div class="products-home">
+                
+                <!-- results -->
+                <div class="results">
+                    <div class="search-results">
+                        <h4>وجدنا <span> 36 </span> العناصر لك</h4>
+                    </div>
+                    
+                    <div class="combobox">
+                        <div class="product-count">
+                            <i class='bx bx-grid-alt'></i>
+                            <span>10 منتج </span>
+                            <i class='bx bx-chevron-down'></i>
+                            <!-- القائمة المنسدلة للاختيار من بين خيارات عدد المنتجات -->
+                            <div class="product-count-dropdown">
+                                <ul>
+                                    <li><a href="#">10 منتج</a></li>
+                                    <li><a href="#">20 منتج</a></li>
+                                    <li><a href="#">30 منتج</a></li>
+                                    <li><a href="#">40 منتج</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="sort-by">
+                            <i class='bx bx-sort-z-a' ></i>
+                            <span>ترتيب حسب</span>
+                            <i class='bx bx-chevron-down'></i>
+                            <div class="sort-by-dropdown">
+                                <ul>
+                                    <li><a href="#">الأحدث</a></li>
+                                    <li><a href="#">الاقدم</a></li>
+                                    <li><a href="#">السعر</a></li>
+                                    <li><a href="#">الاكثر مبيع</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+    
+                </div>
+                <!-- end results -->
+
+                <!-- start container-products" -->
+                <div class="container-products">
+                    <!-- box 1 -->
+                    <div class="box-product">
+                        <div class="img-products">
+                            <div class="non-discount-box">غير متوفر</div>
+                    <div class="new-box">جديد</div>
+                    <span class="discount-circle" >25%<br>
+                        خصم </span>
+                            <img loading="lazy"  src="img/products/electronic1.jpg" alt="">
+                            <div class="icons-row">
+                                <a href="whishlist.html"> <i class='bx bx-heart' ></i></a>
+                                <a href="cart.html"><i class='bx bxs-shopping-bags' ></i></a>
+                                <a href="product.html"><i class='bx bx-show-alt'></i></a>
+                            </div>
+                        </div>
+                        
+                        <div class="info-product">
+                            <a href="product.html">كاميرا صغيرة الحجم كول بيكس B500</a>
+                            <!-- stars -->
+                            <div class="stars">
+                                <i class='bx bxs-star' ></i>
+                                <i class='bx bxs-star' ></i>
+                                <i class='bx bxs-star' ></i>
+                                <i class='bx bxs-star' ></i>
+                                <i class='bx bx-star' ></i>
+                            </div>
+                            <!-- discounted-price -->
+                            <p class="discounted-price">
+                                <span class="original-price">$29.98</span>
+                                <span class="discounted">$19.98</span>
+                            </p>
+                                
+                        </div>
+                    </div>
+                    <!-- box 2 -->
+                    <div class="box-product">
+                        <div class="img-products">
+                            <div class="exclusive-circle">حصري</div>
+                            <div class="new-box">جديد</div>
+                        <span class="discount-circle" >25%<br>
+                        خصم </span>
+                            <img loading="lazy"  src="img/products/electronic2.jpg" alt="">
+                            <div class="icons-row">
+                                <a href="whishlist.html"> <i class='bx bx-heart' ></i></a>
+                                <a href="cart.html"><i class='bx bxs-shopping-bags' ></i></a>
+                                <a href="product.html"><i class='bx bx-show-alt'></i></a>
+                            </div>
+                        </div>
+                        <div class="info-product">
+                            <a href="product.html">كاميرا صغيرة الحجم كول بيكس B500</a>
+                            <!-- stars -->
+                            <div class="stars">
+                                <i class='bx bxs-star' ></i>
+                                <i class='bx bxs-star' ></i>
+                                <i class='bx bxs-star' ></i>
+                                <i class='bx bxs-star' ></i>
+                                <i class='bx bx-star' ></i>
+                            </div>
+                            <!-- discounted-price -->
+                            <p class="discounted-price">
+                                <span class="original-price">$29.98</span>
+                                <span class="discounted">$19.98</span>
+                            </p>                            
+                        </div>
+                    </div>
+                    <!-- box 3 -->
+                    <div class="box-product">
+                        <div class="img-products">
+                            <div class="non-discount-box">غير متوفر</div>
+                        <div class="new-box">جديد</div>
+                        <span class="discount-circle" >25%<br>
+                        خصم </span>
+                            <img loading="lazy"  src="img/products/products-021.png" alt="">
+                            <div class="icons-row">
+                                <a href="whishlist.html"> <i class='bx bx-heart' ></i></a>
+                                <a href="cart.html"><i class='bx bxs-shopping-bags' ></i></a>
+                                <a href="product.html"><i class='bx bx-show-alt'></i></a>
+                            </div>
+                        </div>
+                        <div class="info-product">
+                            <a href="product.html">كاميرا صغيرة الحجم كول بيكس B500</a>
+                            <!-- stars -->
+                            <div class="stars">
+                                <i class='bx bxs-star' ></i>
+                                <i class='bx bxs-star' ></i>
+                                <i class='bx bxs-star' ></i>
+                                <i class='bx bxs-star' ></i>
+                                <i class='bx bx-star' ></i>
+                            </div>
+                            <!-- discounted-price -->
+                            <p class="discounted-price">
+                                <span class="original-price">$29.98</span>
+                                <span class="discounted">$19.98</span>
+                            </p>                            
+                        </div>
+                    </div>
+                    <!-- box 4 -->
+                    <div class="box-product">
+                        <div class="img-products">
+                            <div class="special-offer-box">عروض مميزة</div>
+                            <img loading="lazy"  src="img/products/electronic4.jpg" alt="">
+                            <div class="icons-row">
+                                <a href="whishlist.html"> <i class='bx bx-heart' ></i></a>
+                                <a href="cart.html"><i class='bx bxs-shopping-bags' ></i></a>
+                                <a href="product.html"><i class='bx bx-show-alt'></i></a>
+                            </div>
+                        </div>
+                        <div class="info-product">
+                            <a href="product.html">كاميرا صغيرة الحجم كول بيكس B500</a>
+                            <!-- stars -->
+                            <div class="stars">
+                                <i class='bx bxs-star' ></i>
+                                <i class='bx bxs-star' ></i>
+                                <i class='bx bxs-star' ></i>
+                                <i class='bx bxs-star' ></i>
+                                <i class='bx bx-star' ></i>
+                            </div>
+                            <!-- discounted-price -->
+                            <p class="discounted-price">
+                                <span class="original-price">$29.98</span>
+                                <span class="discounted">$19.98</span>
+                            </p>                            
+                        </div>
+                    </div>
+                    <!-- box 5 -->
+                    <div class="box-product">
+                        <div class="img-products">
+                            <div class="non-discount-box">غير متوفر</div>
+                            <img loading="lazy"  src="img/products/products-013.png" alt="">
+                            <div class="icons-row">
+                                <a href="whishlist.html"> <i class='bx bx-heart' ></i></a>
+                                <a href="cart.html"><i class='bx bxs-shopping-bags' ></i></a>
+                                <a href="product.html"><i class='bx bx-show-alt'></i></a>
+                            </div>
+                        </div>
+                        <div class="info-product">
+                            <a href="product.html">كاميرا صغيرة الحجم كول بيكس B500</a>
+                            <!-- stars -->
+                            <div class="stars">
+                                <i class='bx bxs-star' ></i>
+                                <i class='bx bxs-star' ></i>
+                                <i class='bx bxs-star' ></i>
+                                <i class='bx bxs-star' ></i>
+                                <i class='bx bx-star' ></i>
+                            </div>
+                            <!-- discounted-price -->
+                            <p class="discounted-price">
+                                <span class="original-price">$29.98</span>
+                                <span class="discounted">$19.98</span>
+                            </p>                            
+                        </div>
+                    </div>
+                    <!-- box 6 -->
+                    <div class="box-product">
+                        <div class="img-products">
+                            <div class="special-offer-box">عروض مميزة</div>
+                            <img loading="lazy"  src="img/products/products-017.png" alt="">
+                            <div class="icons-row">
+                                <a href="whishlist.html"> <i class='bx bx-heart' ></i></a>
+                                <a href="cart.html"><i class='bx bxs-shopping-bags' ></i></a>
+                                <a href="product.html"><i class='bx bx-show-alt'></i></a>
+                            </div>
+                        </div>
+                        <div class="info-product">
+                            <a href="product.html">كاميرا صغيرة الحجم كول بيكس B500</a>
+                            <!-- stars -->
+                            <div class="stars">
+                                <i class='bx bxs-star' ></i>
+                                <i class='bx bxs-star' ></i>
+                                <i class='bx bxs-star' ></i>
+                                <i class='bx bxs-star' ></i>
+                                <i class='bx bx-star' ></i>
+                            </div>
+                            <!-- discounted-price -->
+                            <p class="discounted-price">
+                                <span class="original-price">$29.98</span>
+                                <span class="discounted">$19.98</span>
+                            </p>                            
+                        </div>
+                    </div>
+                    <!-- box 7 -->
+                    <div class="box-product">
+                        <div class="img-products">
+                            <div class="new-box">جديد</div>
+                            <div class="special-offer-box">عروض مميزة</div>
+                            <img loading="lazy"  src="img/products/products-07.png" alt="">
+                            <div class="icons-row">
+                                <a href="whishlist.html"> <i class='bx bx-heart' ></i></a>
+                                <a href="cart.html"><i class='bx bxs-shopping-bags' ></i></a>
+                                <a href="product.html"><i class='bx bx-show-alt'></i></a>
+                            </div>
+                        </div>
+                        <div class="info-product">
+                            <a href="product.html">كاميرا صغيرة الحجم كول بيكس B500</a>
+                            <!-- stars -->
+                            <div class="stars">
+                                <i class='bx bxs-star' ></i>
+                                <i class='bx bxs-star' ></i>
+                                <i class='bx bxs-star' ></i>
+                                <i class='bx bxs-star' ></i>
+                                <i class='bx bx-star' ></i>
+                            </div>
+                            <!-- discounted-price -->
+                            <p class="discounted-price">
+                                <span class="original-price">$29.98</span>
+                                <span class="discounted">$19.98</span>
+                            </p>                            
+                        </div>
+                    </div>
+                    <!-- box 8 -->
+                    <div class="box-product">
+                        <div class="img-products">
+                            <div class="new-box">جديد</div>
+                            <div class="special-offer-box">عروض مميزة</div>
+                            <img loading="lazy"  src="img/products/products-05.png" alt="">
+                            <div class="icons-row">
+                                <a href="whishlist.html"> <i class='bx bx-heart' ></i></a>
+                                <a href="cart.html"><i class='bx bxs-shopping-bags' ></i></a>
+                                <a href="product.html"><i class='bx bx-show-alt'></i></a>
+                            </div>
+                        </div>
+                        <div class="info-product">
+                            <a href="product.html">كاميرا صغيرة الحجم كول بيكس B500</a>
+                            <!-- stars -->
+                            <div class="stars">
+                                <i class='bx bxs-star' ></i>
+                                <i class='bx bxs-star' ></i>
+                                <i class='bx bxs-star' ></i>
+                                <i class='bx bxs-star' ></i>
+                                <i class='bx bx-star' ></i>
+                            </div>
+                            <!-- discounted-price -->
+                            <p class="discounted-price">
+                                <span class="original-price">$29.98</span>
+                                <span class="discounted">$19.98</span>
+                            </p>                            
+                        </div>
+                    </div>
+                    <!-- box 9 -->
+                    <div class="box-product">
+                        <div class="img-products">
+                            <div class="new-box">جديد</div>
+                            <div class="special-offer-box">عروض مميزة</div>
+                            <img loading="lazy"  src="img/products/products-017.png" alt="">
+                            <div class="icons-row">
+                                <a href="whishlist.html"> <i class='bx bx-heart' ></i></a>
+                                <a href="cart.html"><i class='bx bxs-shopping-bags' ></i></a>
+                                <a href="product.html"><i class='bx bx-show-alt'></i></a>
+                            </div>
+                        </div>
+                        <div class="info-product">
+                            <a href="product.html">كاميرا صغيرة الحجم كول بيكس B500</a>
+                            <!-- stars -->
+                            <div class="stars">
+                                <i class='bx bxs-star' ></i>
+                                <i class='bx bxs-star' ></i>
+                                <i class='bx bxs-star' ></i>
+                                <i class='bx bxs-star' ></i>
+                                <i class='bx bx-star' ></i>
+                            </div>
+                            <!-- discounted-price -->
+                            <p class="discounted-price">
+                                <span class="original-price">$29.98</span>
+                                <span class="discounted">$19.98</span>
+                            </p>                            
+                        </div>
+                    </div>
+
+                </div>
+                <!-- end container-products" -->
+
+                <div class="pagination">
+                    <span>السابق</span>
+                    <span>1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <span>4</span>
+                    <span>...</span>
+                    <span>التالي</span>
+                </div>
+            </div>
+            <!-------------- end products-home --------------->
+        </div>
+    </main>
+
+    <!----------- start footer  section ---------------->
+    <footer class="footer">
+        <div class="continer-footer">
+            <div class="rew-footer">
+                <!-- col-footer 1 -->
+                <div class="col-footer">
+                    <a href="#" class="logo"><img src="img/logo.png" alt=""></a>
+                    <p>لوريم إيبسوم(Lorem Ipsum) هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر.
+                    </p>
+                        <div class="social-links">
+                        <i class='bx bxl-instagram-alt'></i>
+                        <i class='bx bxl-twitter'></i>
+                        <i class='bx bxl-tiktok' ></i>
+                        <i class='bx bxl-youtube' ></i>
+                        <i class='bx bxl-linkedin' ></i>
+                        
+                    </div>
+                </div>
+                <!-- col-footer 1 -->
+                <div class="col-footer">
+                    <h4>روابط سريعه</h4>
+                    <ul>
+                        <li><a href="">الرئيسة</a></li>
+                        <li><a href="">من نحن</a></li>
+                        <li><a href="">تواصل معنا</a></li>
+                        <li><a href="">الشروط والأحكام</a></li>
+                        <li><a href="">الأسئلة الشائعة</a></li>
+                    </ul>
+                </div>
+
+                <!-- col-footer 1 -->
+                <div class="col-footer">
+                    <h4>متابعه الحساب</h4>
+                    <ul>
+                        <li><a href="">طلباتى</a></li>
+                        <li><a href="">متابعه الطلبات</a></li>
+                        <li><a href="">الإرجاع والاستبدال</a></li>
+                        <li><a href="">حسابى</a></li>
+                        <li><a href="">معلوماتى</a></li>
+                    </ul>
+                </div>
+
+                <!-- col-footer 1 -->
+                <div class="col-footer">
+                    <h4>ابقى على تواصل</h4>
+                    <div class="contact-details">
+                        <div class="contact-detail">
+                            <i class='bx bxs-map'></i>
+                            <span>فلسطين, غزة </span>
+                        </div>
+                        <div class="contact-detail">
+                            <i class='bx bxs-envelope' ></i>
+                            <span>mhmod@gmail.com </span>
+                        </div>
+                        <div class="contact-detail">
+                            <i class='bx bxs-phone-call' ></i>
+                            <span>+ 970 546 6345 </span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copy">
+            <p> &copy;   جميع الحقوق محفوظة. صنع بواسطة محمود الشاعر ❤️</p>
+        </div>
+    </footer>
+
+    <!----------- end footer  section ---------------->
+    <!-- link js -->
+    <script src="js/main.js"></script>
+    <script>
+                $(document).ready(function() {
+            $('.cart-add-button a').click(function(e) {
+                e.preventDefault();
+
+                var addButton = $(this);
+                var cartIcon = $('.cart-icon');
+
+                // إضافة الصورة لعنصر السلة
+                cartIcon.addClass('clicked');
+                setTimeout(function() {
+                    cartIcon.removeClass('clicked');
+                }, 300);
+            });
+        });
+
+
+        
+    </script>
+</body>
+</html>
