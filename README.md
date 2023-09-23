@@ -12,7 +12,7 @@
 
 ## كيفية الاستخدام
 
-1. انتقل إلى [رابط المشروع](https://www.example.com).
+1. انتقل إلى [رابط المشروع]([https://www.example.com](https://alshaercode.github.io/A1-complete-electronics-store-using-html-css-js-/index.html)).
 2. استكشف الملابس المختلفة المعروضة.
 3. انقر على زر "اشتر الآن" للملابس التي ترغب في شرائها.
 4. قم بإضافة الملابس إلى سلة التسوق.
@@ -41,7 +41,7 @@
 للمزيد من التفاصيل والتعليمات حول كيفية تشغيل المشروع، يرجى زيارة صفحة [التوثيق Documentation](docs.md).
 
 ## عرض المشروع
-  : [رابط-المشروع](https://alshaercode.github.io/Elzero_HTML_And_CSS_LEON_Template-One/)
+  : [رابط-المشروع](https://alshaercode.github.io/A1-complete-electronics-store-using-html-css-js-/index.html)
 
 ## صور من المشروع
 
