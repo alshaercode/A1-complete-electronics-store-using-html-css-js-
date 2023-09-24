@@ -47,19 +47,35 @@
                 <a href="faq.html">الاسئلة الشائعة</a>
             </nav>
             <div class="icon-container">
-                <!-- <a href=""><i class='bx bx-refresh' ></i></a>  -->
+                <div class="whishlist-count">2</div>
                 <a href="whishlist.html"><i class='bx bx-heart' ></i></a>
-                <a href="cart.html" id="go-back"><i class='bx bxs-shopping-bags' ></i></a>
+                <div class="cart-count" id="cart-count">4</div>
+                <a href="cart.html" id="add-to-cart-global"><i class='bx bxs-shopping-bags'></i></a>
                 <a href=""><i class='bx bx-search-alt' ></i></a>
             </div>
             
         </div>
     </nav>
     
-    <section class="banners">
+    <section class="banners ">
         <div class="container-banners">
-            <div class="img-1">
-                <img loading="lazy" src="img/banners/a1.gif" alt="">
+            <div class="img-1 slider">
+                <div class="slide_viewer">
+                    <div class="slide_group">
+                        <div class="slide">
+                            <img src="img/banners/612c9b5ce4baf.gif" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="img/banners/a-1 (1).gif" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="img/banners/a1.gif" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="img/banners/a-1 (2).gif" alt="">
+                        </div>
+                    </div>
+                    </div>
             </div>
             <!-- <div class="image-text">
                 <h2>افضل مجموعة العروض تصل ل 50%</h2>
@@ -144,17 +160,17 @@
         <!-- start container-products" -->
         <section class="container-products">
             <!-- box 1 -->
-            <div class="box-product">
+            <div class="box-product" id="cart-item-1">
                 <div class="img-products">
                     <div class="exclusive-circle">حصري</div>
                     <img loading="lazy" src="img/products/electronic1.jpg" alt="">
                     <div class="icons-row">
                         <a href="whishlist.html"> <i class='bx bx-heart' ></i></a>
-                        <a href="cart.html"><i class='bx bxs-shopping-bags' ></i></a>
+                        <a href="" class="add-to-cart-item"><i class='bx bxs-shopping-bags' ></i></a>
                         <a href="product.html"><i class='bx bx-show-alt'></i></a>
                     </div>
                 </div>
-                
+
                 <div class="info-product">
                     <a href="product.html">كاميرا صغيرة الحجم كول بيكس B500</a>
                     <!-- stars -->
@@ -170,7 +186,6 @@
                         <span class="original-price">$29.98</span>
                         <span class="discounted">$19.98</span>
                     </p>
-                        
                 </div>
             </div>
             <!-- box 2 -->
@@ -261,6 +276,8 @@
         <!-- end container-products" -->
     </div>
     <!-------------- end products-home --------------->
+    
+    <!-------------- start slider --------------->
     <section class="slider">
         <div class="slide_viewer">
         <div class="slide_group">
@@ -279,6 +296,7 @@
         </div>
         </div>
     </section>
+    <!-------------- end slider --------------->
 
     <section class="hading-products">
         <h4>منتجات مميزة</h4>
@@ -553,8 +571,23 @@
             <div class="img-11">
                 <img loading="lazy" src="img/banners/banner-hotdeal-01.jpg" alt="" onclick="applyEffect(this)">
             </div>
-            <div class="img-22">
-                <img loading="lazy" src="img/banners/banner-hotdeal-02.jpg" alt="" onclick="applyEffect(this)">
+            <div class="img-22 slider">
+                <div class="slide_viewer">
+                    <div class="slide_group">
+                        <div class="slide">
+                            <img src="img/banners/banner-hotdeal-02.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="img/banners/04.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="img/banners/05.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="img/banners/a-1 (2).gif" alt="">
+                        </div>
+                    </div>
+                    </div>
             </div>
         </div>
     </section>
@@ -897,6 +930,8 @@
         
         advance();
         });
+
+       
     </script>
 
 </body>

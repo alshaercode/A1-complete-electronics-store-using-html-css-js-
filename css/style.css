@@ -53,6 +53,7 @@ body {
     background-color: var(--white-color);
 }
 
+
 a {
     text-decoration: none;
     color: inherit;
@@ -204,6 +205,36 @@ main .container-right-sidebar {
     color: var(--flash-white-color);
 }
 
+
+.cart-count {
+    background-color: var(--flash-white-color2); /* لون خلفية العدد */
+    color: #ffffff; /* لون النص */
+    border-radius: 50%; /* لتجعل العنصر دائريًا */
+    width: 17px; /* العرض */
+    height: 17px; /* الارتفاع */
+    text-align: center; /* محاذاة النص في الوسط */
+    line-height: 17px; /* ارتفاع الخط للنص الوسطي */
+    font-size: 12px; /* حجم النص */
+    position: absolute; /* تموضع مطلق لتحديد المكان الدقيق */
+    top: 50px;
+    left: 150px;
+}
+
+.whishlist-count{
+    background-color: var(--flash-white-color2); /* لون خلفية العدد */
+    color: #ffffff; /* لون النص */
+    border-radius: 50%; /* لتجعل العنصر دائريًا */
+    width: 17px; /* العرض */
+    height: 17px; /* الارتفاع */
+    text-align: center; /* محاذاة النص في الوسط */
+    line-height: 17px; /* ارتفاع الخط للنص الوسطي */
+    font-size: 12px; /* حجم النص */
+    position: absolute; /* تموضع مطلق لتحديد المكان الدقيق */
+    top: 50px;
+    left: 195px;
+}
+
+
 /* ------------------------------------
             #banners
 ------------------------------------- */
@@ -212,7 +243,7 @@ main .container-right-sidebar {
 }
 .container-banners {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1.6fr 1fr;
     gap: 0 1rem;
 }
 
@@ -261,7 +292,7 @@ main .container-right-sidebar {
     3px 3px 5px black; 
 }
 .img-11 img {
-    height: 350px;
+    height: 300px;
 }
 .img-22 img {
     width: 100%;
