@@ -238,29 +238,39 @@ main .container-right-sidebar {
 /* ------------------------------------
             #banners
 ------------------------------------- */
+/* Style for a container with banners */
 .banners {
     margin-bottom: 3rem;
 }
+
+/* Style for a container with grid layout */
 .container-banners {
     display: grid;
     grid-template-columns: 1.6fr 1fr;
     gap: 0 1rem;
 }
 
+/* Style for the second image container within the grid */
 .container-banners .img-2 {
     display: grid;
     gap: .5rem;
 }
+
+/* Style for the first image within the first container */
 .container-banners .img-1 img {
-    /* width: 1500px; */
     height: 300px;
     position: relative;
+    /* Uncomment the following line if you want to set a fixed width */
+    /* width: 1500px; */
 }
+
+/* Style for the second image within the second container */
 .container-banners .img-2 img {
     width: 2000px;
     height: 300px;
 }
 
+/* Style for text overlay on images */
 .image-text {
     position: absolute;
     bottom: 230px;
@@ -271,40 +281,85 @@ main .container-right-sidebar {
     text-align: center;
 }
 
-.image-text .btn button{
-    font-size: 14px; /* حجم النص في الزر */
-    padding: 8px 20px; /* حجم الزر */
+/* Style for buttons within the text overlay */
+.image-text .btn button {
+    font-size: 14px;
+    padding: 8px 20px;
     background-color: var(--flash-white-color2);
     color: var(--white-color);
     border-radius: 15px;
-    border: none ;
+    border: none;
     cursor: pointer;
 }
+
+/* Style for heading within the text overlay */
 .image-text h2 {
     font-size: 24px;
     font-weight: var(--fw600);
 }
+
+/* Style for spans within the text overlay */
 .image-text span {
     font-size: 24px;
     font-weight: var(--fw600);
     color: var(--white-color);
-    text-shadow: 1px 1px 1px #000, 
-    3px 3px 5px black; 
+    text-shadow: 1px 1px 1px #000, 3px 3px 5px black;
 }
+
+/* Style for the first image with class img-11 */
 .img-11 img {
     height: 300px;
 }
+
+/* Style for the second image with class img-22 */
 .img-22 img {
     width: 100%;
     height: 350px;
 }
 
-/* تطبيق التأثير عند النقر */
+/* Hover effect class */
 .clicked {
-    filter: brightness(80%); /* تغيير السطوع */
-    transform: scale(1.1); /* تكبير الصورة */
+    filter: brightness(80%); /* Change brightness on hover */
+    transform: scale(1.1); /* Scale the image on hover */
     transition: filter 0.3s ease, transform 0.3s ease;
 }
+
+@media (max-width: 768px) {
+    /* Responsive styles for screens with a maximum width of 768px */
+
+    /* Adjust the grid layout for smaller screens */
+    .container-banners {
+        grid-template-columns: 1fr; /* Change to a single column layout */
+        /* gap: 1rem;  */
+    }
+
+    /* Reduce the size of the images for better fit on smaller screens */
+    .container-banners .img-1 img,
+    .container-banners .img-2 img,
+    .img-11 img,
+    .img-22 img {
+        width: 100%; /* Make images span the full width of the container */
+        height: auto; /* Automatically adjust the image height */
+    }
+
+    /* Adjust the position of text overlay on smaller screens */
+    .image-text {
+        bottom: 10px; /* Move the text closer to the bottom of the images */
+        left: 10px; /* Move the text closer to the left */
+    }
+
+    /* Reduce the font size of the heading and buttons for smaller screens */
+    .image-text h2 {
+        font-size: 18px;
+    }
+
+    .image-text .btn button {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+}
+
+
 /* ------------------------------------
             #Categories
 ------------------------------------- */
@@ -312,9 +367,9 @@ main .container-right-sidebar {
     margin: 1rem 0 1.5rem 0;
 }
 .container-Categories {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+    gap: 20px;
 }
 
 .box-Categories {
@@ -1094,7 +1149,12 @@ main .container-right-sidebar {
     color: #333;
     border-top: solid thin rgba(0, 0, 0, .1);
 }
-
+/* تنسيق لتجاوب مع كل الشاشات */
+@media (max-width: 768px) {
+    .rew-footer {
+        grid-template-columns: 1fr; /* Adjust the number of columns further for smaller screens */
+    }
+}
 
 /* =======++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++=========
                                         #Connect.html
@@ -1105,14 +1165,14 @@ main .container-right-sidebar {
 ------------------------------------ */
 
 .contact-section {
-    /* padding: 10px 40px; */
+   
 }
 
 .contact-box {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
     align-items: center;
-    gap: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
 }
 
 .contact-box .box {
@@ -1156,8 +1216,8 @@ main .container-right-sidebar {
 
 .container-send {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(21rem, 1fr));
+    gap: 2rem;
     /* background-color: #55acee; */
 }
 
@@ -2547,7 +2607,7 @@ main .container-right-sidebar {
 
 .about-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1.5rem;
 }
 
@@ -2572,7 +2632,7 @@ main .container-right-sidebar {
 
 .services-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
     gap: 1.5rem;
 }
 
@@ -2628,6 +2688,7 @@ main .container-right-sidebar {
 }
 
 .card-wrapper {
+    
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
@@ -2761,6 +2822,9 @@ main .container-right-sidebar {
 
     .swiper-navBtn {
         display: none;
+    }
+    .card-wrapper {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
 }
 
